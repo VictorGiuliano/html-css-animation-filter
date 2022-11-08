@@ -88,6 +88,26 @@ transform: scale(1.5);
 }
 .ex-11-icon {
     font-size: 60px;
+    animation: timer 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes timer{
+    0%{
+        transform:rotate(0grad); 
+    }
+    25%{
+        transform:rotate(90grad); 
+    }
+    50%{
+        transform:rotate(180grad); 
+    }
+    75%{
+        transform:rotate(270grad); 
+    }
+    100%{
+        transform:rotate(0grad); 
+    }
+
 }
 .ex-12-button, .ex-13-button {
     position: relative;
