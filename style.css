@@ -60,13 +60,18 @@ transform: scale(1.5);
 }
 .ex-8-img:hover{
     border-radius: 20px;
-    filter:invert(100%);  
-    transform: scale(0.5);
+    filter:invert(100%) blur(3px) ; 
 }
 
-.ex-9-img {
+.ex-9-img{
     margin: 50px 100px;
     width: 400px;
+    transition:all 3s;
+}
+.ex-9-img:hover{
+    border-radius: 20px;
+    filter:invert(100%) blur(3px) ; 
+    transform:scale(1.5);
 }
 .ex-10-icon {
     font-size: 60px;
