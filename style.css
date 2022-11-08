@@ -130,7 +130,7 @@ transform: scale(1.5);
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    animation: d-spostati 5s;
+    animation: d-spostati 8s;
     animation-iteration-count: infinite;
     
 }
@@ -141,30 +141,61 @@ transform: scale(1.5);
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    animation: s-spostati 5s;
+    animation: s-spostati 8s;
     animation-iteration-count: infinite;
 }
 
 @keyframes d-spostati{
-from{
+0%{
+    left: 10%;
     top: -10px;
-    left:10px;
+}
+25%{
+    left: 100%;
+    top:-10px;
+}
+30%{
+    right:0;
+    top:100%;
+}
+50%{
+    left:0%;
+    top:100%;
+}
+75%{
+    left:-10%;
+    bottom:30px;
+}
+100%{
+    left:-10%;
+    bottom:100%;
+}
+}
 
-}
-to{
-    top: -10px;
-    left:150px;
-}
-
-}
 @keyframes s-spostati{
-    from{
+    0%{
         bottom: -10px;
-        right:10px;
-    
+        right: 20%;
     }
-    to{
-        bottom: -10px;
-        right:150px;
-    }  
+    25%{
+        bottom:0px;
+        right:100%;  
+    }
+    30%{
+        right:0;
+        top:100%;
+    }
+    50%{
+        top:0px;
+        left:-10%;
+    }
+    75%{
+        left: 100%;
+        top:-20%;
+        
+    }
+    100%{
+        right:0;
+        top:100%;
+    }
 }
