@@ -75,6 +75,16 @@ transform: scale(1.5);
 }
 .ex-10-icon {
     font-size: 60px;
+    animation: ruota 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes ruota{
+    from{
+        transform:rotate(0grad); 
+    }
+    to{
+        transform: rotate(360grad); 
+    }
 }
 .ex-11-icon {
     font-size: 60px;
